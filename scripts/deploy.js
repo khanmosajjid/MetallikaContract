@@ -12,7 +12,7 @@ let params = [name, symbol,18, initialSupply,"0x9Ac64Cc6e4415144C455BD8E4837Fea5
 
 async function main() {
   const multiSigDeployer = await ethers.getContractFactory("Metallika2");
-  const proxy = await upgrades.deployProxy(multiSigDeployer, params, { gasLimit: 90000000 });
+  const proxy = await upgrades.deployProxy(multiSigDeployer, params, { gasLimit: "90000000" });
   console.log("proxy", proxy?.address);
   await proxy.deployed();
 

@@ -1,7 +1,6 @@
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-etherscan");
-require('@openzeppelin/hardhat-upgrades');
-
+require("@openzeppelin/hardhat-upgrades");
 
 module.exports = {
   solidity: {
@@ -17,7 +16,7 @@ module.exports = {
     mumbai: {
       url: "https://polygon-mumbai.g.alchemy.com/v2/rfCruuBJ6-ND7sPx8qfywX0PjKWcmIQq",
       accounts: [
-        "80f0d542ae290b2968c4395283a1100e9f0fdf0eec115339235b26b23f972d7a",
+        "",
       ],
     },
     testnet: {
@@ -25,12 +24,20 @@ module.exports = {
       chainId: 97,
       // gasLimit: 500000,
       accounts: [
-        "80f0d542ae290b2968c4395283a1100e9f0fdf0eec115339235b26b23f972d7a",
+        "",
+      ],
+    },
+    smartchain: {
+      url: "https://bsc-dataseed.binance.org/",
+      chainId: 56,
+      // gasLimit: 500000,
+      accounts: [
+        "",
       ],
     },
   },
   etherscan: {
-    apiKey: "NET91B9KDU24AS39FRIKRDNYIQ9UUYJ51K",
+    apiKey: "MF2AM8D1Q77SX1TTFACVHMUKUC8BN4GB6Y",
   },
 };
 
